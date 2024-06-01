@@ -1,0 +1,92 @@
+teleportalientocursor
+setfow 0
+TATC			=	Teleport Alien To Cursor				
+TTC			=	Teleport To Cursor
+TogglePostProcess 0 | 1	=	0 = off | 1 = on
+togglerain
+unlimitedmoves
+infinitegrenades
+show fog
+show POSTPROCESS
+dropmuton true | false		- the bool is for human team p layer or enemy
+finishallprojects
+foundrycheat
+
+DebugCreatePlayer 1
+
+SkipAnimals
+ShowDebug WEAPON
+
+TakeNoDamage 
+ToggleRain 
+SetStormIntensity 0 		to stop lightning flashes.
+
+--- Strategy (Geoscape): ---
+
+FinishAllProjects		= Immediately finish all items in foundry and workshop queue.
+ForceFCMission [mission]	= Forces Funding Council mission once you enter Mission Control. 
+				If [mission] is omitted, gives a random valid FC mission. Mission strings are in DefaultMaps.ini.
+
+GiveResource [resource] [amount] -- Add specified resource amount to inventory. Resource types: money, elerium, alloys, meld, engineers, scientists. Note: this command cannot be used to add weapon fragments (use GiveItem for that). On the other hand, elerium, alloys, and meld can be added using either GiveItem or GiveResource command (see items table).
+    GiveMeTonsOfResources [amount] -- Add the specified amount to all resource types listed above, except fragments. If you don't specify the amount, a default value of 9,999 will be added to each resource.
+    GiveItem WeaponFragment [amount] -- Add specified amount of fragments to inventory.
+    LevelUpBarracks [num] -- Promotes all soldiers in barracks by [num] ranks.
+    SetMonth [num] -- Sets month to [num]. Takes effect in Mission Control and launches the monthly report if new month is greater than current. Game starts on month 1.
+	
+	
+Bindings=(Name="I", Command="GiveCash 1000", Alt=True)
+.Bindings=(Name="O", Command="GiveItem SectoidCorpse 10", Alt=True)
+.Bindings=(Name="P", Command="GiveItem SectoidCommanderCorpse 10", Alt=True)
+.Bindings=(Name="F", Command="GiveItem MutonCorpse 10", Alt=True)
+.Bindings=(Name="G", Command="GiveItem MutonEliteCorpse 10", Alt=True)
+.Bindings=(Name="H", Command="GiveItem BerserkerCorpse 10", Alt=True)
+.Bindings=(Name="J", Command="GiveItem CyberdiscCorpse 10", Alt=True)
+.Bindings=(Name="K", Command="GiveItem EtherealCorpse 10", Alt=True)
+.Bindings=(Name="L", Command="GiveItem CryssalidCorpse 10", Alt=True)
+.Bindings=(Name="Z", Command="GiveItem SectopodCorpse 10", Alt=True)
+.Bindings=(Name="X", Command="GiveItem DroneCorpse 10", Alt=True)
+.Bindings=(Name="C", Command="GiveItem FloaterCorpse 10", Alt=True)
+.Bindings=(Name="V", Command="GiveItem FloaterHeavyCorpse 10", Alt=True)
+.Bindings=(Name="B", Command="GiveItem ThinManCorpse 10", Alt=True)
+.Bindings=(Name="R", Command="GiveItem WeaponFragment 1000", Alt=True) 		= gives 1000 fragment
+.Bindings=(Name="T", Command="GiveItem Meld 1000", Alt=True) same
+.Bindings=(Name="Y", Command="GiveItem WeaponFragment 1000", Alt=True)
+.Bindings=(Name="U", Command="GiveItem Elerium115 1000", Alt=True)
+.Bindings=(Name="I", Command="GiveItem AlienAlloys 1000", Alt=True)
+.Bindings=(Name="Q", Command="GiveResource Scientists 50", Alt=True) 		= gives 50 scientists
+.Bindings=(Name="W", Command="Levelupbarracks 7", Alt=True) 			= max lv barracks and soldiers lv!
+.Bindings=(Name="E", Command="SetStrategyFacilitiesSuperSpree on", Alt=True) 	= fast research
+.Bindings=(Name="Q", Command="Lowerpanic", Alt=True)
+
+GiveOTSTech
+e.g.	GiveOTSTech eOTS_SquadSize_I
+
+[Upgrade name] 			[Dev Console name]
+Squad Size I 			eOTS_SquadSize_I
+Squad Size II 			eOTS_SquadSize_II
+Tactical Officers 		eOTS_XP_II
+Company Officers 		eOTS_HP_I
+Field Officers 			eOTS_Leader
+Regiment Officers 		eOTS_XP_I
+Commanding Officers 		eOTS_Will_I 
+
+
+GiveFacility 
+e.g.	GiveFacility eFacility_AccessLift
+
+Access Lift 			eFacility_AccessLift
+Laboratory 			eFacility_ScienceLab
+Workshop 			eFacility_Workshop
+Satellite Uplink 		eFacility_SmallRadar
+Fission Generator 		eFacility_Power
+Foundry 			eFacility_Foundry
+Officer Training School 	eFacility_OTS
+Alien Containment 		eFacility_AlienContain
+Satellite Nexus 		eFacility_LargeRadar
+Thermo Generator 		eFacility_ThermalPower
+Elerium Generator 		eFacility_EleriumGenerator
+Psionic Labs 			eFacility_PsiLabs
+Hyperwave Relay 		eFacility_HyperwaveRadar
+Gollop Chamber 			eFacility_DeusEx
+Repair Bay 			eFacility_CyberneticsLab
+Genetics Lab 			eFacility_GeneticsLab 
