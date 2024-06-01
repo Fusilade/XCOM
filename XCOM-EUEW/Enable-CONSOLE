@@ -1,0 +1,24 @@
+//may not work with X-COM:Enemy Within.
+
+--- Instructions:--- 
+
+* Hex Editor
+* (Binaries/Win32/XcomGame.EXE)
+* Find & Replace Sequence:
+		   ••	
+    44 24 08 C7 00 01 00 00 00 C2 08 00 8B 4C 24 08
+
+ * with:
+		   ••	
+    44 24 08 C7 00 00 00 00 00 C2 08 00 8B 4C 24 08
+
+* ... & ...
+	  ••	
+    C7 01 01 00 00 00 C2 08 00 CC CC CC CC CC CC CC
+
+* with:
+	  ••
+    C7 01 00 00 00 00 C2 08 00 CC CC CC CC CC CC CC
+
+* Run the new .exe 
+* Console Key = Backslash (\)
