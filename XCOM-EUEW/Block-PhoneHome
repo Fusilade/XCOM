@@ -1,0 +1,16 @@
+--- PREVENT XCom from phoning home: ---
+* Add the following lines to the bottom of the hosts file
+
+	C:\Windows\System32\drivers\etc\hosts.txt
+
+# Prevent XCOM Phone Home
+127.0.0.1 prod.xcom.firaxis.com
+127.0.0.1 prod.xcom-ew.firaxis.com
+
+# (XCOM 2012)
+ALL: prod.xcom.firaxis.com
+ALL: 65.118.245.165
+
+# (XCOM EW 2012)
+ALL: prod.xcom-ew.firaxis.com
+ALL: 65.118.245.139
