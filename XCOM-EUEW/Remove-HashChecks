@@ -1,0 +1,29 @@
+--- Remove hash checks on these 3 files:---
+
+\.X.C.o.m.G.a.m.e.\.C.o.n.f.i.g.\.D.e.f.a.u.l.t.G.a.m.e.C.o.r.e...i.n.i...........\.....\.X.C.o.m.G.a.m.e.\.C.o.n.f.i.g.\.D.e.f.a.u.l.t.M.P.G.a.m.e...i.n.i.......\.....\.X.C.o.m.G.a.m.e.\.C.o.n.f.i.g.\.D.e.f.a.u.l.t.L.o.a.d.o.u.t.s...i.n.i.
+
+* Change 58••
+25 00 64 00 00 00 00 00 49 00 6e 00 69 00 56 00
+65 00 72 00 73 00 69 00 6f 00 6e 00 00 00 00 00
+2e 00 2e 00 5c 00 2e 00 2e 00 5c 00 58 00 43 00
+				    ••
+* To:    57••
+25 00 64 00 00 00 00 00 49 00 6e 00 69 00 56 00
+65 00 72 00 73 00 69 00 6f 00 6e 00 00 00 00 00
+2e 00 2e 00 5c 00 2e 00 2e 00 5c 00 57 00 43 00
+				    ••
+--- Disable XComGame.UPK hash check:---
+* Change: 78••
+78 63 6f 6d 67 61 6d 65 2e 75 70 6b
+••
+To: 77••
+77 63 6f 6d 67 61 6d 65 2e 75 70 6b
+••
+
+--- Disable XComStrategyGame.UPK hash check:---
+* Change: 78••
+78 63 6f 6d 73 74 72 61 74 65 67 79 67 61 6d 65 2e 75 70 6b
+••
+To: 77••
+77 63 6f 6d 73 74 72 61 74 65 67 79 67 61 6d 65 2e 75 70 6b
+••
