@@ -1,0 +1,12 @@
+// place me in the binaries folder and type "exec cheats.txt"
+// "M:\SteamLibrary\steamapps\common\XCom-Enemy-Unknown\Binaries"
+// ...
+//unlimitedmoves
+infinitegrenades
+takenodamage
+setfow 0
+togglerain
+TogglePostProcess 0
+show fog
+GiveCash 9999
+GiveMeTonsOfResources
