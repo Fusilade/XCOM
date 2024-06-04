@@ -1,5 +1,6 @@
 // place me in the binaries folder and type "exec cheats.txt"
 // "M:\SteamLibrary\steamapps\common\XCom-Enemy-Unknown\Binaries"
+// "M:\SteamLibrary\steamapps\common\XCom-Enemy-Unknown\XEW\Binaries"
 // ...
 //unlimitedmoves
 infinitegrenades
