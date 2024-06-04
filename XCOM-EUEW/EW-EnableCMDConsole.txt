@@ -1,0 +1,34 @@
+Using gildors decompress.exe on the engine.upk from enemy within steam install 2024
+
+ then use the decompressed file in the same folder as UPK Utils for PatchUPK.exe & the code below ;; saved as a text file
+* drag and drop the text file onto PatchUPK.exe and it will generate he patched exe
+
+------------------------------------------------------------------------------
+EnableCMDConsole.txt
+------------------------------------------------------------------------------
+MOD_NAME=EnableCMDConsole
+AUTHOR=TKBS - (Original Author Unknown)
+DESCRIPTION=Patch "EW" "Engine.upk" to Enable Command Console and Developer's Shell for XCOM Enemy WITHIN
+
+UPK_FILE=Engine.upk
+
+{ Expand function IsConsoleAllowed }
+EXPAND_FUNCTION=Engine.IsConsoleAllowed:72
+
+FUNCTION=Engine.IsConsoleAllowed
+
+{ New virtual size }
+REL_OFFSET=0x28
+[MODDED_HEX]
+0D
+
+{ Return true and ReturnValue }
+REL_OFFSET=0x30
+[MODDED_HEX]
+04 27 04 3A 84 03 00 00
+
+{ Function's flags }
+REL_OFFSET=0x3C
+[MODDED_HEX]
+02 01 02 
+------------------------------------------------------------------------------
